@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Butler";
+    src: local("Butler Regular"),
+      local("Butler-Regular"),
+      url("../fonts/butler/Butler_Regular.woff2") format("woff2"),
+      url("../fonts/butler/Butler_Regular.woff") format("woff"),
+      url("../fonts/butler/Butler_Regular.otf") format("otf");
+      font-weight: 400;
+  }
+  
+
+body {
+    font-family: 'Butler', Arial, sans-serif;
+    line-height: 1.17;
+    font-size: 16px;
+}
