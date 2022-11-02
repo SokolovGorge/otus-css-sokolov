@@ -10,7 +10,64 @@
   
 
 body {
-    font-family: 'Butler', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.17;
     font-size: 16px;
 }
+
+.upper-text {
+  text-transform: uppercase;
+}
+.section-caption {
+  font-family: Butler, Times, 'Times New Roman', serif;
+  font-size: 5.44rem;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.quote {
+  font-family: Butler, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.strengths-caption {
+  font-family: Butler, Times, 'Times New Roman', serif;
+  font-size: 5.75rem;
+  font-weight: 400;
+}
+
+.photo-caption-large {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.photo-caption-normal {
+  font-weight: 400;
+}
+
+.photo-caption-normal-bold {
+  font-weight: 700;
+}
+
+.external-link, .external-link-bold {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.external-link-bold {
+  font-weight: 700;
+}
+
+.strengths-list{
+  font-family: Butler, Times, 'Times New Roman', serif;
+  font-size: 2.125rem;
+  font-weight: 400;
+}
+
+
