@@ -1,17 +1,8 @@
-@font-face {
-    font-family: "Butler";
-    src: local("Butler Regular"),
-      local("Butler-Regular"),
-      url("../fonts/butler/Butler_Regular.woff2") format("woff2"),
-      url("../fonts/butler/Butler_Regular.woff") format("woff"),
-      url("../fonts/butler/Butler_Regular.otf") format("otf");
-      font-weight: 400;
-  }
-  
+ 
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.17;
+    line-height: 1.2;
     font-size: 16px;
 }
 
@@ -21,7 +12,7 @@ body {
 .section-caption {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 5.44rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section-title {
@@ -32,13 +23,13 @@ body {
 .quote {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .strengths-caption {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 5.75rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .photo-caption-large {
@@ -67,7 +58,7 @@ body {
 .strengths-list{
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 2.125rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 
