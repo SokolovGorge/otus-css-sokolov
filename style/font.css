@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: "Butler";
+  src: local("Butler Ultra Light"),
+    local("Butler-Ultra-Light"),
+    url("../fonts/butler/Butler_Ultra_Light.woff2") format("woff2"),
+    url("../fonts/butler/Butler_Ultra_Light.woff") format("woff"),
+    url("../fonts/butler/Butler_Ultra_Light.otf") format("otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Butler";
+  src: local("Butler Light"),
+    local("Butler-Light"),
+    url("../fonts/butler/Butler_Light.woff2") format("woff2"),
+    url("../fonts/butler/Butler_Light.woff") format("woff"),
+    url("../fonts/butler/Butler_Light.otf") format("otf");
+  font-weight: 300;
+} 
+
+@font-face {
+  font-family: "Butler";
+  src: local("Butler Medium"),
+    local("Butler-Medium"),
+    url("../fonts/butler/Butler_Medium.woff2") format("woff2"),
+    url("../fonts/butler/Butler_Medium.woff") format("woff"),
+    url("../fonts/butler/Butler_Medium.otf") format("otf");
+  font-weight: 500;
+}  
