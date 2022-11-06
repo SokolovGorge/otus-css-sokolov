@@ -5,17 +5,24 @@
 }
 
 body {
-    font-family: 'Roboto', Arial, 'Helvetica' sans-serif;
+    font-family: 'Roboto', Arial, 'Helvetica', sans-serif;
     font-size: 1rem;
 }
 
 .upper-text {
   text-transform: uppercase;
 }
+
+.nav-section {
+  text-align: center;
+  height: 135px;
+}
+
 .section-caption {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 5.44rem;
   font-weight: 300;
+  margin: 0;
 }
 
 .section-title {
@@ -56,6 +63,37 @@ body {
 
 .external-link-bold {
   font-weight: 700;
+}
+
+.mod-studio-section {
+  width: 1065px;
+  height: 630px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mod-studio-plat {
+  background-color: white;
+  width: 557px;
+  height: 355px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mod-studio-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mod-studio-title {
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% + 76px);
+  transform: translate(-50%, -50%);
 }
 
 .strengths-list{
