@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,6 +12,10 @@
 body {
   font-family: 'Roboto', Arial, 'Helvetica', sans-serif;
   font-size: 1rem;
+}
+
+.invisible {
+  display: none;
 }
 
 .upper-text {
@@ -26,7 +31,6 @@ body {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 5.44rem;
   font-weight: 300;
-  margin: 0;
 }
 
 .section-title {
@@ -70,34 +74,35 @@ body {
 }
 
 .mod-studio-section {
-  width: 1065px;
+  max-width: 1065px;
   height: 630px;
   margin: 0 auto;
   position: relative;
 }
 
-.mod-studio-plat {
-  background-color: white;
-  width: 557px;
-  height: 355px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .mod-studio-caption {
+  background-color: white;
+  text-align: center;
+  padding: 130px 0;
+  width: 557px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%);}
 
 .mod-studio-title {
   position: absolute;
   left: calc(50% - 10px);
   top: calc(50% + 76px);
   transform: translate(-50%, -50%);
+}
+
+.mode-studio-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .strengths-list{
