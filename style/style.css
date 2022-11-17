@@ -12,6 +12,19 @@
 body {
   font-family: 'Roboto', Arial, 'Helvetica', sans-serif;
   font-size: 1rem;
+  background-color: white;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 1200px;
+  position: relative;
 }
 
 .invisible {
@@ -73,28 +86,28 @@ body {
   font-weight: 700;
 }
 
-.mod-studio-section {
-  max-width: 1065px;
-  height: 630px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.mod-studio-caption {
-  background-color: white;
-  text-align: center;
-  padding: 130px 0;
-  width: 557px;
+.mod-studio-plat {
+  background-color: white;  
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);}
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 5.5rem;
+  padding: 1.5em 0.8em;
+}
+
+.mod-studio-caption {
+  white-space: nowrap;
+  font-size: 1em;
+}
 
 .mod-studio-title {
+  font-size: 0.205em;
   position: absolute;
-  left: calc(50% - 10px);
-  top: calc(50% + 76px);
-  transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .mode-studio-image {
@@ -102,7 +115,11 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 1065px;
+  max-height: 630px;
+  object-fit: cover;
 }
 
 .strengths-list{
