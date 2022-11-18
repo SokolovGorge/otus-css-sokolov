@@ -25,6 +25,7 @@ section {
   min-height: 600px;
   max-height: 1200px;
   position: relative;
+  background-color: blueviolet;
 }
 
 .invisible {
@@ -120,6 +121,42 @@ section {
   max-width: 1065px;
   max-height: 630px;
   object-fit: cover;
+}
+
+.biography-title {
+  position: absolute;
+  right: 0px;
+  bottom: 60px;
+  z-index: 1;
+ transform: rotate(-90deg);
+}
+
+.biography-columumn {
+  float: left;
+  width: 50%;
+  position: relative;
+  height: 100%;
+  background-color: blue;
+  outline: 2px solid red;
+}
+
+.katya-image {
+  position: absolute;
+  right: 32px;
+  width: calc(100% - 32px);
+  height: 100%;
+  max-width: 553px;
+  max-height: 840px;
+  object-fit: cover;
+}
+
+.biography-right {
+  padding-left: 115px;
+  padding-top: 194px;
+}
+
+.katya-caption {
+  margin-bottom: 68px;
 }
 
 .strengths-list{
