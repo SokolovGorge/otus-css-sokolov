@@ -25,6 +25,7 @@ section {
   min-height: 600px;
   max-height: 1200px;
   position: relative;
+  background-color: brown;
 }
 
 .invisible {
@@ -134,15 +135,16 @@ section {
   float: left;
   width: 50%;
   position: relative;
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .biography-left {
-  padding-right: 32px;
+  padding: calc((1400px - 100%)/2)  2.2% 0 0;
 }
 
 .biography-right {
-  padding-left: 115px;
-  padding-top: 194px;
+  padding: 13.5% 8.26% 0 8%;
 }
 
 .biographi-serarator {
@@ -163,10 +165,6 @@ section {
 
 .katya-caption {
   margin-bottom: 68px;
-}
-
-.katya-quote {
-  margin-right: 193px;
 }
 
 .strengths-list{
