@@ -1,17 +1,45 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root { 
   line-height: 1.2; 
   font-size: 16px; 
 }
 
 body {
-    font-family: 'Roboto', Arial, 'Helvetica' sans-serif;
-    font-size: 1rem;
+  font-family: 'Roboto', Arial, 'Helvetica', sans-serif;
+  font-size: 1rem;
+  background-color: white;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 1200px;
+  position: relative;
+}
+
+.invisible {
+  display: none;
 }
 
 .upper-text {
   text-transform: uppercase;
 }
+
+.nav-section {
+  text-align: center;
+  height: 135px;
+}
+
 .section-caption {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 5.44rem;
@@ -56,6 +84,42 @@ body {
 
 .external-link-bold {
   font-weight: 700;
+}
+
+.mod-studio-plat {
+  background-color: white;  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 5.5rem;
+  padding: 1.5em 0.8em;
+}
+
+.mod-studio-caption {
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+.mod-studio-title {
+  font-size: 0.205em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.mode-studio-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 1065px;
+  max-height: 630px;
+  object-fit: cover;
 }
 
 .strengths-list{
