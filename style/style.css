@@ -25,6 +25,8 @@ section {
   min-height: 600px;
   max-height: 1200px;
   position: relative;
+/*  background-color: yellow;
+  outline: 2px solid red; */
 }
 
 .invisible {
@@ -75,10 +77,12 @@ section {
 }
 
 .photo-caption-normal {
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .photo-caption-normal-bold {
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -188,6 +192,50 @@ section {
 .katya-quote {
   width: 100%;
   max-width: 13em;
+}
+
+.disigners-title {
+  position: absolute;
+  right: 26%;
+  top: 15%;
+  z-index: 1;
+  transform: rotate(-90deg);
+}
+
+.designers-block {
+  width: 100%;
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.designer-item-big {
+    width: 50%;
+    max-width: 720px;
+    text-align: left ;
+}
+
+.designer-item-small {
+  width: 23%;
+}
+
+.designer-image-big {
+  max-width: 609px;
+  width: 84.6%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.designer-image-small {
+  max-width: 309px;
+  width: 94%;
+  object-fit: cover;
+  margin-bottom: 18px;
+} 
+.designer-caption-big {
+  margin-left: 25%;
 }
 
 .strengths-list{
