@@ -146,6 +146,7 @@ section {
 
 .biography-left {
   text-align: right;
+  overflow: hidden;
 }
 
 .biography-right {
@@ -155,9 +156,10 @@ section {
 .biographi-separator {
   width: 14px;
   height: 4px;
-  margin-top: 62px;
-  margin-bottom: 31px;
-  color: black;
+  margin-top: 3.875em;
+  margin-bottom: 1.9375em;
+  background-color: black;
+  border: none;
 }
 .katya-image {
   position: absolute;
