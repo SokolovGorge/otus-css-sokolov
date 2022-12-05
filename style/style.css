@@ -223,21 +223,21 @@ section {
   text-align: left ;
 }
 
-.designer-image-big {
+.designer-item img {
+  max-width: 309px;
+  width: 94%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.designer-big img {
   max-width: 609px;
   width: 84.6%;
   object-fit: cover;
   margin-bottom: 18px;
 }
 
-.designer-image-small {
-  max-width: 309px;
-  width: 94%;
-  object-fit: cover;
-  margin-bottom: 18px;
-} 
-
-.designer-caption-big {
+.designer-big h3, .designer-big p {
   margin-left: 25%;
 }
 
