@@ -27,8 +27,8 @@ section {
   position: relative;
   display: flex;
   align-items: center;
-  /* background-color: yellow;
-  outline: 2px solid red;  */
+  background-color: yellow;
+  outline: 2px solid red;  
 }
 
 .invisible {
@@ -249,6 +249,39 @@ section {
 .designer__item_big .designer__text {
   display: inline-block;
  text-align: left;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 170px calc(50% - 170px) 19% 16% 15%;
+  grid-template-rows: 60px 292px 232px 232px;
+}
+
+.testimonials__mimage {
+  grid-row: 2 / 5;
+  grid-column: 2 / 3;
+  width: 100%;
+  max-width: 515px;
+  object-fit: cover;
+}
+
+.testimonials__limage {
+  grid-row: 3 / 5;
+  grid-column: 4 / 5;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 221px;
+  object-fit: cover;
+}
+
+.testimonials__link {
+  transform: rotate(-90deg) translateY(100%);
+}
+
+.testimonials__quote {
+  text-align: center;
+  padding: 0 10px;
+  align-self: flex-start;
 }
 
 .strengths-list{
