@@ -25,6 +25,10 @@ section {
   min-height: 600px;
   max-height: 1200px;
   position: relative;
+  display: flex;
+  align-items: center;
+  /* background-color: yellow;
+  outline: 2px solid red;  */
 }
 
 .invisible {
@@ -75,10 +79,12 @@ section {
 }
 
 .photo-caption-normal {
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .photo-caption-normal-bold {
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -188,6 +194,61 @@ section {
 .katya-quote {
   width: 100%;
   max-width: 13em;
+}
+
+.disigners-title {
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  margin-top: -315px;
+  z-index: 1;
+  transform: rotate(-90deg) translateY(-50%);
+}
+
+.designer {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  overflow: auto;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.designer__item {
+  padding-top: 6.5%;
+  width: 309px;
+  flex-shrink: 0;
+}
+
+.designer__item_big {
+  padding-top: 0%;
+  width: 609px;
+  text-align: center;
+  margin: 0 80px;
+}
+
+.designer__item_big:first-child {
+  margin-left: 0;
+} 
+
+.designer__item_big:last-child {
+  margin-right: 0;
+}
+
+.designer__item img {
+   width: 100%;
+  height: 442px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.designer__item_big img {
+  height: 538px;
+}
+
+.designer__item_big .designer__text {
+  display: inline-block;
+ text-align: left;
 }
 
 .strengths-list{
