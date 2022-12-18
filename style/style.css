@@ -27,8 +27,8 @@ section {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: yellow;
-  outline: 2px solid red;  
+  /* background-color: yellow;
+  outline: 2px solid red;   */
 }
 
 .invisible {
