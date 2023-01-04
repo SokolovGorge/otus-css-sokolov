@@ -28,7 +28,7 @@ section {
   display: flex;
   align-items: center;
   /* background-color: yellow;
-  outline: 2px solid red;  */
+  outline: 2px solid red;   */
 }
 
 .invisible {
@@ -248,8 +248,66 @@ section {
 
 .designer__item_big .designer__text {
   display: inline-block;
- text-align: left;
+  text-align: left;
 }
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 12% 38% 50%;
+  grid-template-rows: 14.66% 85.34%;
+  align-items: stretch;
+  width: 100%;
+}
+
+.testimonial_title {
+  grid-column: 2 / 4;
+  align-self: flex-end;
+  padding: 0 0 34px 0;
+}
+
+.testimonial__links {
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  max-height: 757px;
+}
+
+.testimonial__link {
+  transform: rotate(-90deg) translateY(54%);
+  height: 33%;
+  align-self: flex-end;
+}
+
+.testimonial__mimage {
+  width: 100%;
+  max-width: 515px;
+  max-height: 757px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.testimonial__quote {
+  text-align: center;
+  width: 206px;
+  margin: 1.5% 0 0 38%;
+  overflow: hidden;
+}
+
+@media all and ( max-height: 750px ) {
+  .testimonial__quote {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+
+.testimonial__limage {
+  width: 100%;
+  max-width: 221px;
+  object-fit: cover;
+  margin: 3.5% 35% 0 36.5%;
+}
+
 
 .strengths-list{
   font-family: Butler, Times, 'Times New Roman', serif;
