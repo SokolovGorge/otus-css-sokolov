@@ -28,7 +28,7 @@ section {
   display: flex;
   align-items: center;
   /* background-color: yellow;
-  outline: 2px solid red;   */
+  outline: 2px solid red;    */
 }
 
 .invisible {
@@ -65,12 +65,6 @@ section {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 2rem;
   font-weight: 200;
-}
-
-.strengths-caption {
-  font-family: Butler, Times, 'Times New Roman', serif;
-  font-size: 5.75rem;
-  font-weight: 300;
 }
 
 .photo-caption-large {
@@ -300,7 +294,6 @@ section {
   }
 }
 
-
 .testimonial__limage {
   width: 100%;
   max-width: 221px;
@@ -308,11 +301,68 @@ section {
   margin: 3.5% 35% 0 36.5%;
 }
 
+.strengths {
+  display: block;
+}
 
-.strengths-list{
+.strengths__title {
+  position: absolute;
+  left: 30.5%;
+  top: 154px;
+  transform: rotate(-90deg) translateY(-50%);
+}
+
+.strengths__caption {
+  font-family: Butler, Times, 'Times New Roman', serif;
+  font-size: 5.75rem;
+  font-weight: 300;
+  padding: 10% 0 1% 56%;
+}
+
+.strengths__container {
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.strengths__list {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 2.125rem;
   font-weight: 300;
+  line-height: 1.15; 
+  list-style-type: none;
+}
+
+.strengths__item {
+ display: inline-block;
+  vertical-align: top;
+  width: 351px;
+  margin-right: 1%;
+}
+
+.strengths__item_big {
+ display: inline-block;
+  vertical-align: top;
+  padding: 34px 0 0 148px;
+  width: 600px;
+}
+
+@supports (display: flex) {
+
+  .strengths__container {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+  
+  .strengths__item {
+    flex-shrink: 0;
+  }
+
+  .strengths__item_big {
+    flex-shrink: 0;
+  }
+
 }
 
 
