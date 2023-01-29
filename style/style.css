@@ -18,8 +18,8 @@ body {
 section {
   position: relative;
   margin-bottom: 40px;
-  background-color: yellow;
-  outline: 2px solid red;   
+  /* background-color: yellow;
+  outline: 2px solid red;    */
 }
 
 
@@ -101,6 +101,8 @@ section {
   font-weight: 700;
 }
 
+/* ------ Mod Studio ------------- */ 
+
 .mod-studio-plat {
   font-size: 4.375rem;
   padding: 2.16em 0;
@@ -162,9 +164,19 @@ section {
     
 }
 
+/* ------------ Biographi ----------------- */
+
+.biography-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .biography-title {
-  text-align: end;
-  margin: 0 30px 787px;
+  position: absolute;
+  z-index: 1;
+  right: 38px;
+  top: 20px;
 }
 
 .biography-left {
@@ -172,36 +184,64 @@ section {
 }
 
 .biography-right {
+  display: flex;
   order: 1;
 }
 
 .katya-block-right {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 0;
 } 
 
+.katya__art {
+  margin: 0 1rem;
+  padding-top: 40px;
+  order: 0;
+}
+
+.katya__prof {
+  width: 10rem;
+  order: 1;
+  margin: 40px 1rem 60px;
+}
+
+.katya-quote {
+  order: 2;
+  text-align: center;
+  margin: 0 1rem 60px;
+}
+
+.katya-caption {
+  order: 3;
+  width: 100vw;
+  text-align: center;
+}
+
 
 .katya-image {
-  width: 100%;
+  width: 100vw;
   height: 353px;
   object-fit: none;
-  object-position: center center;
 }
+
 
 @media (min-width: 426px) {
 
+  .biography-section {
+    flex-direction: row;
+  }
+
   .biography-title {
-    position: absolute;
     right: 38px;
+    top: unset;
     bottom: 100px;
-    z-index: 1;
     transform: rotate(-90deg);
     margin: 0 0;
   }
 
   .biography-column {
-    /* float: left; */
     width: 50%;
     height: 100%;
     position: relative;
@@ -225,6 +265,7 @@ section {
     margin-bottom: 1.9375em;
     background-color: black;
     border: none; 
+    order: 3;
   }
 
   .biographi__space {
@@ -252,33 +293,41 @@ section {
   }
 
   .katya-caption {
-    margin: 180px 0 20px 0;
+    margin: 180px 0 34px 0;
     width: 3em;
+    order: 0;
+    text-align: left;
   }
 
   .katya__art {
+    padding: 0;
+    margin: 0;
     width: 100%;
+    order: 1
   }
 
   .katya__prof {
-    width: 100%;
-    margin-bottom: 5rem;
+    width: unset;
+    order: 2;
+    margin: 0;
   }
 
   .katya-quote {
     width: 100%;
     max-width: 13em;
+    text-align: left;
+    order: 4;
+    margin: 0;
   }
 
 }
 
+/* ------------- Designers -------------- */ 
+
 .disigners-title {
-  position: absolute;
-  right: 25%;
-  top: 50%;
-  margin-top: -315px;
-  z-index: 1;
-  transform: rotate(-90deg) translateY(-50%);
+  width: 100vw;
+  text-align: right;
+  padding: 72px 1rem 60px;
 }
 
 .designer {
@@ -288,6 +337,7 @@ section {
   overflow: auto;
   justify-content: flex-start;
   gap: 24px;
+  margin-left: 1rem;
 }
 
 .designer__item {
@@ -297,10 +347,7 @@ section {
 }
 
 .designer__item_big {
-  padding-top: 0%;
-  width: 609px;
-  text-align: center;
-  margin: 0 80px;
+  display: none;
 }
 
 .designer__item_big:first-child {
@@ -327,84 +374,161 @@ section {
   text-align: left;
 }
 
+@media (min-width: 426px) {
+
+  .disigners-title {
+    width: auto;
+    padding: 0;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    margin-top: -315px;
+    z-index: 1;
+    transform: rotate(-90deg) translateY(-50%);
+  }
+
+  .designer__item_big {
+    display: block;
+    padding-top: 0%;
+    width: 609px;
+    text-align: center;
+    margin: 0 80px;  
+  }
+  
+}
+
+/* ------------ Testimonial -------------- */
+
 .testimonial {
-  /* display: grid; */
-  grid-template-columns: 12% 38% 50%;
-  grid-template-rows: 14.66% 85.34%;
-  align-items: stretch;
-  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+
 }
 
 .testimonial_title {
-  grid-column: 2 / 4;
-  align-self: flex-end;
-  padding: 0 0 34px 0;
-}
-
-.testimonial__links {
-  grid-row: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  max-height: 757px;
-}
-
-.testimonial__link {
-  transform: rotate(-90deg) translateY(54%);
-  height: 33%;
-  align-self: flex-end;
-}
-
-.testimonial__mimage {
-  width: 100%;
-  max-width: 515px;
-  max-height: 757px;
-  object-fit: cover;
-  overflow: hidden;
+  width: 100vw;
+  text-align: right;
+  padding: 120px 1rem 120px;
+  order: 0;
 }
 
 .testimonial__quote {
   text-align: center;
-  width: 206px;
-  margin: 1.5% 0 0 38%;
-  overflow: hidden;
-}
-
-@media all and ( max-height: 750px ) {
-  .testimonial__quote {
-    width: 70%;
-    margin-left: 15%;
-  }
+  margin: 0 2rem 60px;
+  order: 1;
 }
 
 .testimonial__limage {
-  width: 100%;
-  max-width: 221px;
+  width: 100vw;
+  height: 333px;
   object-fit: cover;
-  margin: 3.5% 35% 0 36.5%;
+  margin-bottom: 40px;
+  order: 2;
 }
 
+.testimonial__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+  order: 3;
+}
+
+.testimonial__link {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial__mimage {
+  display: none;
+}
+
+@media (min-width: 426px) {
+
+  .testimonial {
+    display: grid; 
+    grid-template-columns: 12% 38% 50%;
+    grid-template-rows: 14.66% 85.34%;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .testimonial_title {
+    width: auto;
+    text-align: left;
+    grid-column: 2 / 4;
+    align-self: flex-end;
+    padding: 0 0 34px 0;
+  }
+  
+  .testimonial__links {
+    grid-row: 2 / 3;
+    flex-direction: column;
+    max-height: 757px;
+  }
+  
+  .testimonial__link {
+    transform: rotate(-90deg) translateY(54%);
+    height: 33%;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+  
+  .testimonial__mimage {
+    display: block;
+    width: 100%;
+    max-width: 515px;
+    max-height: 757px;
+    overflow: hidden;
+  }
+  
+  .testimonial__quote {
+    width: 206px;
+    margin: 1.5% 0 0 38%;
+    overflow: hidden;
+  }
+  
+  .testimonial__limage {
+    width: 100%;
+    max-width: 221px;
+    object-fit: cover;
+    margin: 3.5% 0 0 36.5%;
+    overflow: hidden;
+  }  
+  
+  @media (max-height: 750px) {
+    .testimonial__quote {
+      width: 70%;
+      margin-left: 15%;
+    }
+  }
+  
+}
+
+/* -------------- Strengths -------------- */
+
 .strengths {
-  /* display: block; */
+  display: block;
 }
 
 .strengths__title {
-  position: absolute;
-  left: 30.5%;
-  top: 154px;
-  transform: rotate(-90deg) translateY(-50%);
+  padding: 60px 1rem 60px;
+  text-align: right;
 }
 
 .strengths__caption {
   font-family: Butler, Times, 'Times New Roman', serif;
   font-size: 5.75rem;
   font-weight: 300;
-  padding: 10% 0 1% 56%;
+  width: 100vw;
+  text-align: center;
 }
 
 .strengths__container {
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100%;
+  display: flex;
+  overflow: auto;
+  gap: 24px;
+  margin-left: 1rem;
 }
 
 .strengths__list {
@@ -413,36 +537,80 @@ section {
   font-weight: 300;
   line-height: 1.15; 
   list-style-type: none;
+  width: 50vw;
+  order: 0;
 }
 
-.strengths__item {
- display: inline-block;
-  vertical-align: top;
-  width: 351px;
-  margin-right: 1%;
+.strengths__notebook {
+  order: 1;
 }
 
-.strengths__item_big {
- display: inline-block;
-  vertical-align: top;
-  padding: 34px 0 0 148px;
-  width: 600px;
+.strengths__chiar {
+  display: none;
 }
 
-@supports (display: flex) {
+
+@media (min-width: 426px) {
+
+  .strengths__title {
+    position: absolute;
+    left: 30.5%;
+    top: 154px;
+    padding: 0 0;
+    text-align: left;
+    transform: rotate(-90deg) translateY(-50%);
+  }
+
+  .strengths__caption {
+    text-align: left;
+    padding: 10% 0 1% 56%;
+  }
 
   .strengths__container {
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
+    display: block;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .strengths__list {
+    width: none;
+  }
+
+  .strengths__chiar {
+    display: block;
   }
   
   .strengths__item {
-    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 351px;
+    margin-right: 1%;
   }
 
   .strengths__item_big {
-    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 34px 0 0 148px;
+    width: 600px;
+  }
+
+  @supports (display: flex) {
+
+    .strengths__container {
+      display: flex;
+      flex-direction: row;
+      overflow: auto;
+    }
+  
+    .strengths__item {
+      flex-shrink: 0;
+    }
+
+    .strengths__item_big {
+      flex-shrink: 0;
+    }
   }
 
 }
