@@ -387,6 +387,14 @@ section {
     transform: rotate(-90deg) translateY(-50%);
   }
 
+  .designer__item {
+    transition: all 0.5s;
+  }
+
+  .designer__item:hover {
+    transform: scale(1.2);
+  }
+
   .designer__item_big {
     display: block;
     padding-top: 0%;
