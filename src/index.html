@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/font.css">
-    <link rel="stylesheet" href="style/style.css">
+    <!--link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/style.css"-->
 </head>
 <body>
 
@@ -28,7 +28,7 @@
             <img class="mode-studio-image" src="img/mod-studio.jpg" alt="Mod Studio">
         </section>
 
-        <section class="biography-section clearfix"  id="biography-section">
+        <section class="biography-section"  id="biography-section">
             <h2 class="section-title biography-title">Biography</h2>
 
             <div class="biography-column biography-left">
@@ -39,9 +39,10 @@
                 <div class="katya-block-right">
                     <h3 class="section-caption katya-caption">Katya Mills</h3>
 
-                    <p class="photo-caption-large">Art Director</p>
-                    <p class="photo-caption-large">Scenography / Styling / Creative Photography / Design</p>
+                    <p class="photo-caption-large katya__art">Art Director</p>
+                    <p class="photo-caption-large katya__prof">Scenography / Styling / Creative Photography / Design</p>
                     <hr class="biographi-separator"/>
+                    <div class="biographi__space"></div>
 
                     <blockquote class="quote katya-quote">
                         &ldquo;The more&nbsp;I deal with the work as&nbsp;something that is&nbsp;my&nbsp;own, as something that is&nbsp;personal, the more successful it&nbsp;is.&rdquo;
@@ -50,7 +51,7 @@
             </div>
         </section>
 
-        <section id="designers-section">
+        <section class="designers-section" id="designers-section">
 
             <h2 class="section-title disigners-title">Designers</h2>
 
@@ -118,29 +119,32 @@
 
         </section>
 
-        <section class="invisible" id="strong-section">
+        <section class="strengths" id="strong-section">
 
-            <h2 class="section-title">Strong points</h2>
+ 
+            <h2 class="section-title strengths__title">Strong points</h2>
+            <h3 class="strengths__caption">Strengths</h3>
 
-            <img src="img/macbook-on-table.jpg" alt="Notebook on the table">
-            <img src="img/chiar-in-corner.jpg" alt="Chair in the corner">
+            <div class="strengths__container">
+                <img class="strengths__item strengths__notebook" src="img/macbook-on-table.jpg" alt="Notebook on the table">
+                <img class="strengths__item strengths__chiar" src="img/chiar-in-corner.jpg" alt="Chair in the corner">
 
-            <h3 class="strengths-caption">Strengths</h3>
-            <ul class="strengths-list">
-                <li>Interiors</li>
-                <li>Outdoors</li>
-                <li>Portraits</li>
-                <li>Styling</li>
-                <li>Events</li>
-                <li>Architecture</li>
-                <li>Design</li>
-                <li>Celebrations</li>
-                <li>Artistic</li>
-                <li>Fashion</li>
-                <li>Nature</li>
-                <li>Creativity</li>
-            </ul>
-            <img src="img/chiar-in-corner.jpg" alt="Chair in the corner">
+                <ul class="strengths__list strengths__item_big">
+                    <li>Interiors</li>
+                    <li>Outdoors</li>
+                    <li>Portraits</li>
+                    <li>Styling</li>
+                    <li>Events</li>
+                    <li>Architecture</li>
+                    <li>Design</li>
+                    <li>Celebrations</li>
+                    <li>Artistic</li>
+                    <li>Fashion</li>
+                    <li>Nature</li>
+                    <li>Creativity</li>
+                </ul>
+                <img class="strengths__item strengths__chiar" src="img/chiar-in-corner.jpg" alt="Chair in the corner">
+            </div>
 
         </section>
     </main>
